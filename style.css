@@ -196,8 +196,41 @@ td, th{
 }
 .imagem-beneficios{
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+}
+.imagem-beneficios:hover{
+    opacity: 0.80;
 }
 .video{
     width: 560px;
     margin: 2em auto;
 }
+
+            /*SELETORES AVANÇADOS*/
+/*como manipular uma tag filha direta de outra tag pai*/
+/*
+main > p{ 
+    background: red;
+}
+
+/*como manipular uma tag irmã de outra tag*/
+/*
+img + p{
+    background: blue; 
+}
+*/
+
+/*como manipular todas as tags irmãs de outra tag*/
+/*
+img ~ p{
+    background: orangered; 
+}
+*/
+
+/*como manipular todas as tags menos uma tagou id especifico - EXCLUSÃO*/
+/*
+.principal p:not(#missao){
+    background: yellow;
+}
+*/
