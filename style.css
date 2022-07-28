@@ -136,9 +136,12 @@ td, th{
     font-size: 2em;
     margin: 0 0 1em;
     clear:left;
+    color: #000000;
+    /*Opacidade de cor -> color: rgba(0, 0, 0, 0.3);*/
+    /*Sombra de texto -> text-shadow: 2px 2px #FF0000;*/
 }
 .titulo-principal:first-letter{
-    font-weight: bold;
+    font-weight: bold;    
 }
 .principal{
     padding: 3em 0;
@@ -173,8 +176,9 @@ td, th{
     margin: 0 auto;
 }
 .beneficios{
-    padding: 3m 0;
+    padding: 3em 0;
     background: #888888;
+    /*sOMBRA INTERNA -> box-shadow: inset 0 0 30px #FF0000;*/
 }
 .conteudo-beneficios{
     width: 640px;
@@ -198,6 +202,9 @@ td, th{
     width: 60%;
     opacity: 1;
     transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
+    /*É POSSÍVEL INSERIR VÁRIAS BORDAS DIFERENTES
+                 -> box-shadow: 10px 10px 10px #000000, -10px -10px yellow, -20px 20px rgba(255, 0, 0, 0.5);*/
 }
 .imagem-beneficios:hover{
     opacity: 0.80;
